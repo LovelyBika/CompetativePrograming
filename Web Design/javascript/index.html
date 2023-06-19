@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Learing </title>
+</head>
+<body>
+  <div id="cal">
+    <input type="number" id="one" step="any"/>
+    <Select id="opr">
+        
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        
+        
+    </Select>
+    <input type="number" id="second" step="any"/>
+    <br>
+    <button onclick="cal()">
+     Calculate
+    </button>
+      <input type="text" id="res" readonly=""/>
+  </div> 
+   
+</body>
+
+
+<script>
+     function cal(){
+     var op1= document.getElementById("one").value;
+     var op2=document.getElementById("second").value;
+     op1=parseInt(op1);
+     op2=parseInt(op2); 
+     var op3 =document.getElementById("opr").value;
+     var res=0;
+     switch(op3){
+        case '+': res =op1+op2;
+             break;
+         case '-':res=op1-op2;
+          break;
+         case '*': res=op1*op2;
+         break;
+         case '/':res=op1/op2;  
+          break;
+          default: ;   
+     }
+     document.getElementById("res").value=res;
+    }
+</script>
+
+
+
+</html>
