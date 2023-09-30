@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Different Styles</title>
+    <link id="1" rel="stylesheet" type="text/css" href="styleSheet1.css" />
+    <link id="2" rel="stylesheet" type="text/css" href="styleSheet2.css" />
+    <link id="3" rel="stylesheet" type="text/css" href="styleSheet3.css" />
+    <link id="4" rel="stylesheet" type="text/css" href="styleSheet4.css" />
+    <link id="0" rel="stylesheet" type="text/css" href="noStyleSheet.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div id="top">
+      <h1>Welcome to My homePage</h1>
+      <p>Use the menu to select different StyleSheets</p>
+    </div>
+    <div class="wrapper">
+      <div id="menubar">
+        <ul id="menulist">
+          <li><a href="#" onclick="changeStyle('1')">styleSheet1</a></li>
+          <li><a href="#" onclick="changeStyle('2')">StyleSheet2</a></li>
+          <li><a href="#" onclick="changeStyle('3')">StyleSheet3</a></li>
+          <li><a href="#" onclick="changeStyle('4')">StyleSheet4</a></li>
+          <li><a href="#" onclick="changeStyle('0')">noStyleSheet</a></li>
+        </ul>
+      </div>
+      <div id="main">
+        <h1>Same Page Differnt StyleSheets</h1>
+        <p>
+          This is a demonstration of how different stylesheets can change the
+          layout of your HTML page. You can change the layout of this page by
+          selecting different stylesheets in the menu, or by selecting one of
+          the following links:
+          <br />
+
+          <a href="#" onclick="changeStyle('1')">styleSheet1</a>,
+          <a href="#" onclick="changeStyle('2')">StyleSheet2</a>,
+          <a href="#" onclick="changeStyle('3')">StyleSheet3</a>,
+          <a href="#" onclick="changeStyle('4')">StyleSheet4</a>,
+          <a href="#" onclick="changeStyle('0')">noStyleSheet</a>,
+        </p>
+        <h2>No Style</h2>
+        <p>
+          This page uses DIV elements to group different sections of the HTML
+          page. Click here to see how the page looks like with no stylesheet:
+        </p>
+        <br />
+        <a href="#" onclick="changeStyle('0')">noStyleSheet</a> .
+      </div>
+      <div id="sidebar">
+        <h3>Side-Bar</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+          voluptatibus incidunt autem, ea tempore magnam cupiditate obcaecati
+          necessitatibus tempora rem quidem ipsa ipsam modi molestiae
+          repellendus atque? Tempora non aspernatur adipisci magni voluptatum
+          nisi autem odit esse architecto praesentium, nulla, a corporis optio
+          accusamus reiciendis vero sunt officiis laboriosam quisquam!
+        </p>
+      </div>
+      <div id="botteom">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        aspernatur exercitationem quasi molestiae aliquid libero, veniam esse
+        soluta, voluptatum cum, delectus sequi voluptas deserunt nulla velit
+        saepe laboriosam architecto facere id similique iusto. Praesentium
+        mollitia minima tempora ipsum veniam, eum facilis deserunt impedit
+        fugiat consequuntur, hic numquam. Vitae, sint itaque distinctio optio
+        dolorum dolorem? Cumque amet deserunt eligendi impedit autem doloremque
+        eaque labore quae obcaecati, at, ut reiciendis saepe. Molestias dolores
+        nostrum aliquid delectus quibusdam! Sed ullam hic, ducimus pariatur
+        placeat unde soluta vero voluptatum odit consequuntur vel natus ipsum
+        provident asperiores fuga maiores ab aspernatur praesentium nesciunt
+        itaque voluptate!
+      </div>
+    </div>
+  </body>
+</div>
+</html>

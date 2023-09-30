@@ -15,6 +15,12 @@ const SearchBtn =document.getElementById("Search");
 const newsQueryBtn =document.getElementById("newsQuery");
 const newsTypeBtn =document.getElementById("newsType");
 const newsDetailsBtn =document.getElementById("newsDetails");
+
+API_KEYS= "0ef3ce678d044e18adb67ad5f948ffe3"
+Headline_News= "https://newsapi.org/v2/top-headlines?country=us&apiKey=0ef3ce678d044e18adb67ad5f948ffe3";
+
+
+
 //listner
 HomeBtn.addEventListener("click",function(){});
     

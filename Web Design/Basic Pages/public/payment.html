@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Webpage</title>
+  </head>
+  <body>
+    <h1>Payment Details</h1>
+    <form action="" name="pay" id="pay">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" /> <br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /> <br /><br />
+
+      <label for="mbile">Mobile</label>
+      <input type="number" id="number" id="number" />
+      <br /><br />
+      <h2>Card Detais</h2>
+      <label for="card datails">Card Holder Name </label>
+      <input
+        type="text"
+        id="cardName"
+        name="cardName"
+        placeholder="Card Holder Name"
+      />
+      <br /><br />
+      <label for="carNo">Card Number</label>
+      <input type="number" id="cardNo" name="cardNo" />
+      <br /><br />
+      <label for="cvv">Cvv</label>
+      <input type="password" id="cvv" name="cvv" />
+      <br /><br />
+      <button type="button" onclick="validate()" id="'btn">Pay Now</button>
+    </form>
+  </body>
+</html>
