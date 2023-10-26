@@ -1,2 +1,0 @@
-
-    int left = low;
