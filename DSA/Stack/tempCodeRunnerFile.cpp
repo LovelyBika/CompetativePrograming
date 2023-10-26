@@ -1,1 +1,0 @@
-void printTree(Node *root){
