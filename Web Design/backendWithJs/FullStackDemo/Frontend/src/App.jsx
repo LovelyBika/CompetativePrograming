@@ -1,0 +1,37 @@
+import { useEffect, useState } from 'react'
+import './App.css'
+import axios from 'axios'  //Used at Production Level to Reduce Api calls or jason data Formating
+function App() {
+   const [jokes,setJokes]= useState([])
+
+    useEffect(()=>{
+        axios.get('/api/jokes')
+        .then((response)=>{
+          setJokes(response.data)
+        }
+        )
+        .catch((error)=>{
+          console.log(error);
+        })
+    })
+
+  return (
+    <>
+      <div>
+        <h1> Full Stack Devleoment </h1>
+        <p>Jokes:{jokes.length}</p>
+        {
+          jokes.map((jokes,index)=>(
+            <div key={jokes.id}>
+              <h3>{jokes.title}</h3>
+              <p>{jokes.content}</p>
+              </div>
+          
+        )
+        )}
+      </div>
+    </>
+  )
+}
+
+export default App
